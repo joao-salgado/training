@@ -1,9 +1,7 @@
 describe('hello world app', function() {
   	it('should have a title', function() {
-	      browser.get('http://localhost:8000/src/');
+	      browser.get('http://localhost:8080');
             expect(browser.getTitle()).toEqual('Hello World'); 
-
-
 
             var h1 = element.all(by.css('h1')).first();
             var fname = element.all(by.tagName('input')).first();
